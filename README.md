@@ -114,4 +114,6 @@ retail-sales-performance-analysis/
 ## Author
 **Maria Yovinia** <br>
 Information Systems Graduate <br>
-Google Data Analytics Professional Certificate	
+Google Data Analytics Professional Certificate <br>	
+GitHub:<br>
+https://github.com/yoviniamaria
