@@ -1,7 +1,7 @@
 # retail-sales-performance-analysis
 Sales, Product, and Customer Analytics using SQL and Power BI
 
-# Retail Sales Performance Analysis
+
 ## Project Overview 
 Proyek ini bertujuan untuk menganalisis performa penjualan ritel menggunakan Online Retail Dataset dari UCI Machine Learning Repository.
 Analisis dilakukan dari tiga perspektif bisnis utama:
