@@ -50,7 +50,7 @@ Eight key columns containing
 -	Data Cleaning
 -	Data Validation
 -	Common Table Expressions (CTE)
--	Window Functions (LAG)
+-	Window Functions (LAG, ROW_NUMBER)
 -	Aggregate Functions
 -	CASE WHEN
 -	GROUP BY
@@ -71,6 +71,17 @@ Eight key columns containing
 -	Dashboard Design
 -	Business Recommendation
 
+## Data Cleaning
+| Issue | Decision | Reason |
+|-------|----------|--------|
+| InvoiceDate | Coverted to **DATE** | Agar dapat dilakukan analisis berbasis waktu. |
+| InvoiceNo | Coverted to **VARCHAR** | Nilai invoice yang mengandung karakter (A dan C) tidak dapat disimpan sebagai INTEGER, sehingga berubah menjadi 0 saat proses impor data |
+| Invoice A | Excluded | Bukan merupakan transaksi penjualan |
+| Invoice C | Excluded | Merupakan transaksi pembatalan |
+| InvoiceNo = 0 | Re-imported dataset | Terjadi kesalahan tipe data saat proses impor data |
+| Quantity Negatif | Retained | Tidak seluruh transaksi dengan jumlah negatif merupakan transaksi retur |
+| CustomerID NULL | Retained (Sales Analytics) | Tetap valid untuk analisis penjualan, tetapi dikecualikan pada Customer Analytics. |
+
 ## Dashboard Preview 
 ### Sales Analytics Dashboard
 ### Product Analytics Dashboard
@@ -90,30 +101,36 @@ Eight key columns containing
 
 ## Repository Structure
 ```text
-retail-sales-performance-analysis/
+Retail-Sales-Performance-Analysis
 │
-├── SQL/
-│   ├── 01_data_cleaning.sql
-│   ├── 02_sales_analytics.sql
-│   ├── 03_product_analytics.sql
-│   ├── 04_customer_analytics.sql
-│   └── 05_views.sql
+├── Dataset
+│   └── Online Retail.xlsx
 │
-├── PowerBI/
-│   ├── Retail Sales Dashboard.pbix
-│   └── dashboard.png
+├── SQL
+│   ├── Data Cleaning.sql
+│   ├── Sales Analytics.sql
+│   ├── Product Analytics.sql
+│   ├── Customer Analytics.sql
+│   └── SQL Views.sql
 │
-├── Images/
-│   ├── sales_dashboard.png
-│   ├── product_dashboard.png
-│   └── customer_dashboard.png
+├── Power BI
+│   └── Retail Sales Dashboard.pbix
 │
-├── README.md
-└── LICENSE
+├── Images
+│   ├── Sales Dashboard.png
+│   ├── Product Dashboard.png
+│   └── Customer Dashboard.png
+│
+└── README.md
 ```
 ## Author
-**Maria Yovinia** <br>
-Information Systems Graduate <br>
-Google Data Analytics Professional Certificate <br>	
-GitHub:<br>
-https://github.com/yoviniamaria
+
+**Maria Yovinia** 
+
+Information Systems Graduate 
+
+Google Data Analytics Professional Certificate 
+
+LinkedIn: www.linkedin.com/in/mariayovinia
+
+GitHub: https://github.com/yoviniamaria
