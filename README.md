@@ -1,5 +1,7 @@
 # retail-sales-performance-analysis
-Sales, Product, and Customer Analytics using SQL and Power BI
+Sales, Product, and Customer Analytics using SQL and Power BI <br>
+
+Proyek ini bertujuan menganalisis performa penjualan ritel menggunakan **Online Retail Dataset** dari **UCI Machine Learning Repository**. Analisis dilakukan untuk mengidentifikasi faktor-faktor utama yang memengaruhi **Gross Revenue** berdasarkan tiga perspektif analisis, yaitu **Sales Analytics, Product Analytics**, dan **Customer Analytics**.
 
 
 ## Project Overview 
@@ -12,26 +14,31 @@ Analisis dilakukan dari tiga perspektif bisnis utama:
 Tujuan utama proyek ini adalah mengidentifikasi faktor-faktor yang memengaruhi perubahan **Gross Revenue** bulanan serta memberikan rekomendasi bisnis yang dapat mendukung pengambilan keputusan berbasis data.
 
 ## Business Problem 
-Perusahaan perlu memahami faktor-faktor yang memengaruhi perubahan performa penjualan agar dapat mengambil keputusan bisnis yang lebih efektif. 
-Fluktuasi Gross Revenue setiap bulan dapat dipengaruhi oleh berbagai aspek, seperti jumlah transaksi, performa produk, maupun perilaku customer. <br>
-Proyek ini menggunakan SQL untuk menganalisis tiga aspek utama, yaitu Sales Analytics, Product Analytics, dan Customer Analytics untuk mengidentifikasi faktor utama yang mendorong pertumbuhan maupun penurunan revenue.
+Perusahaan perlu memahami faktor-faktor yang memengaruhi perubahan performa penjualan agar dapat mengambil keputusan bisnis yang lebih efektif. <br> 
+Fluktuasi Gross Revenue setiap bulan dapat dipengaruhi oleh berbagai aspek, seperti: 
+- jumlah transaksi
+- performa produk
+- maupun perilaku customer
+
+Proyek ini bertujuan mengidentifikasi faktor-faktor utama yang memengaruhi peningkatan dan penurunan Revenue melalui analisis data menggunakan SQL serta penyajian insight dalam dashboard interaktif Power BI.<br>
 Hasil analisis diharapkan dapat memberikan insight yang bermanfaat serta rekomendasi berbasis data untuk mendukung strategi bisnis perusahaan.
 
 ## Dataset 
-**Source** <br>
+**Source:** <br>
 Online Retail Dataset (UCI Machine Learning Repository) <br>
-**Period** <br>
+**Period:** <br>
 December 2010 – December 2011 <br>
-**Records** <br>
+**Records:** <br>
 541,909 transactions <br>
-**Columns Used** <br>
+**Columns Used:** <br>
 Eight key columns containing
--	Invoice information
--	Product information 
--	Quantity 
--	Price 
+-	InvoiceNo
+-	StockCode
+-	Description
+-	Quantity
+-	InvoiceDate 
+-	UnitPrice 
 -	CustomerID
--	Transaction date
 -	Country
 
 ## Tools 
@@ -43,41 +50,38 @@ Eight key columns containing
 -	Data Cleaning
 -	Data Validation
 -	Common Table Expressions (CTE)
--	Window Function (LAG)
--	Aggregate Function
+-	Window Functions (LAG)
+-	Aggregate Functions
 -	CASE WHEN
 -	GROUP BY
 -	JOIN
+-	Date Functions
 -	Views 
 -	Ranking Funcions
+-	Business KPI Calculation
 
 ## Business Skills Demonstrated
 -	Sales Analytics
 -	Product Analytics
 -	Customer Analytics
--	KPI Analytics
--	Business Insight
+-	Revenue Analysis
+-	KPI Development
+-	Business Insight Generation
 -	Data Storytelling
 -	Dashboard Design
 -	Business Recommendation
 
 ## Dashboard Preview 
-(belum)
+### Sales Analytics Dashboard
+### Product Analytics Dashboard
+### Customer Analytics Dashboard
 
 ## Key Findings
-**Sales Analytics** <br>
-Perubahan Revenue terutama dipengaruhi oleh jumlah transaksi (transaction volume) dibandingkan dengan perubahan Average Order Value (AOV). 
-Hal ini menunjukkan bahwa perumbuhan atau penurunan pendapatan lebih banyak didorong oleh perubahan aktivitas pembelian pelanggan.
-
-**Product Analytics** <br>
-Pertumbuhan Revenue tidak bergantung pada satu produk tertentu, melainkan didukung oleh beberapa produk dengan performa penjualan yang konsisten. 
-Hal ini menunjukkan adanya kontribusi dari berbagai produk unggulan dalam menghasilkan pendapatan.
-
-**Customer Analytics** <br>
-Perubahan Revenue memiliki hubungan yang kuat dengan fluktuasi jumlah New Customers dan Active Customers. <br>
-Repeat Purchase Rate dan Retention Rate relatif stabil selama periode analisis. <br>
-Menunjukkan bahwa perubahan pendapatan lebih dipengaruhi oleh perubahan jumlah pelanggan aktif dibandingkan perubahan loyalitas pelanggan.
-
+- Perubahan Revenue terutama dipengaruhi oleh jumlah transaksi (transaction volume) dibandingkan dengan perubahan Average Order Value (AOV).
+- Pertumbuhan Revenue didorong oleh beberapa produk dengan performa penjualan yang konsisten, bukan bergantung pada satu produk tertentu.
+- Akuisisi pelanggan dan jumlah pelanggan aktif memberikan pengaruh yang lebih besar terhadap perubahan Revenue dibanding retensi pelanggan.
+- Repeat Purchase Rate dan Retention Rate relatif stabil pada sebagian besar periode analisis.
+  
 ## Business Recommendation
 -	Meningkatkan strategi akuisisi pelanggan dengan mengevaluasi marketing dan channel akuisisi customer.
 -	Meningkatkan aktivitas pelanggan melalui kampanye promosi, voucher, dan email marketing.
