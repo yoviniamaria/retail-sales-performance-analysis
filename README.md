@@ -3,24 +3,29 @@ Sales, Product, and Customer Analytics using SQL and Power BI
 
 
 ## Project Overview 
-Proyek ini bertujuan untuk menganalisis performa penjualan ritel menggunakan Online Retail Dataset dari UCI Machine Learning Repository.
+Proyek ini bertujuan untuk menganalisis performa penjualan ritel menggunakan **Online Retail Dataset** dari **UCI Machine Learning Repository**.<br>
 Analisis dilakukan dari tiga perspektif bisnis utama:
--	Sales Analytics
--	Product Analytics
--	Customer Analytics
-Tujuan utama proyek ini adalah mengidentifikasi faktor-faktor yang memengaruhi perubahan Gross Revenue bulanan serta memberikan rekomendasi bisnis yang dapat mendukung pengambilan keputusan berbasis data.
+-	**Sales Analytics**
+-	**Product Analytics**
+-	**Customer Analytics**
+
+Tujuan utama proyek ini adalah mengidentifikasi faktor-faktor yang memengaruhi perubahan **Gross Revenue** bulanan serta memberikan rekomendasi bisnis yang dapat mendukung pengambilan keputusan berbasis data.
 
 ## Business Problem 
 Perusahaan perlu memahami faktor-faktor yang memengaruhi perubahan performa penjualan agar dapat mengambil keputusan bisnis yang lebih efektif. 
-Fluktuasi Gross Revenue setiap bulan dapat dipengaruhi oleh berbagai aspek, seperti jumlah transaksi, performa produk, maupun perilaku customer. 
+Fluktuasi Gross Revenue setiap bulan dapat dipengaruhi oleh berbagai aspek, seperti jumlah transaksi, performa produk, maupun perilaku customer. <br>
 Proyek ini menggunakan SQL untuk menganalisis tiga aspek utama, yaitu Sales Analytics, Product Analytics, dan Customer Analytics untuk mengidentifikasi faktor utama yang mendorong pertumbuhan maupun penurunan revenue.
 Hasil analisis diharapkan dapat memberikan insight yang bermanfaat serta rekomendasi berbasis data untuk mendukung strategi bisnis perusahaan.
 
 ## Dataset 
-Source: Online Retail Dataset (UCI Machine Learning Repository)
-Period: December 2010 – December 2011
-Records: 541,909 transactions
-Columns Used: Eight key columns containing 
+**Source** <br>
+Online Retail Dataset (UCI Machine Learning Repository) <br>
+**Period** <br>
+December 2010 – December 2011 <br>
+**Records** <br>
+541,909 transactions <br>
+**Columns Used** <br>
+Eight key columns containing
 -	Invoice information
 -	Product information 
 -	Quantity 
