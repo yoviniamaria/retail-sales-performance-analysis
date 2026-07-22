@@ -11,25 +11,27 @@ Analisis dilakukan dari tiga perspektif bisnis utama:
 -	**Product Analytics**
 -	**Customer Analytics**
 
-Tujuan utama proyek ini adalah mengidentifikasi faktor-faktor yang memengaruhi perubahan **Gross Revenue** bulanan serta memberikan rekomendasi bisnis yang dapat mendukung pengambilan keputusan berbasis data.
+Proyek ini menggunakan SQL untuk proses data cleaning dan analisis data, serta Power BI untuk membangun dashboard interaktif. Analisis dilakukan untuk mengidentifikasi faktor-faktor utama yang memengaruhi perubahan Gross Revenue dan menghasilkan rekomendasi bisnis berbasis data.
 
 ## Business Problem 
-Perusahaan perlu memahami faktor-faktor yang memengaruhi perubahan performa penjualan agar dapat mengambil keputusan bisnis yang lebih efektif. <br> 
-Fluktuasi Gross Revenue setiap bulan dapat dipengaruhi oleh berbagai aspek, seperti: 
-- jumlah transaksi
-- performa produk
-- maupun perilaku customer
+Perusahaan ritel perlu memahami faktor-faktor yang memengaruhi perubahan performa penjualan agar dapat mengambil keputusan bisnis yang lebih efektif.
 
-Proyek ini bertujuan mengidentifikasi faktor-faktor utama yang memengaruhi peningkatan dan penurunan Revenue melalui analisis data menggunakan SQL serta penyajian insight dalam dashboard interaktif Power BI.<br>
+Fluktuasi Gross Revenue setiap bulan dapat dipengaruhi oleh berbagai aspek, seperti jumlah transaksi, performa produk dan perilaku customer
+
+Proyek ini bertujuan mengidentifikasi faktor-faktor utama yang mendorong peningkatan maupun penurunan Gross Revenue melalui analisis performa penjualan, produk, dan customer.
+
 Hasil analisis diharapkan dapat memberikan insight yang bermanfaat serta rekomendasi berbasis data untuk mendukung strategi bisnis perusahaan.
 
 ## Dataset 
 **Source:** <br>
-Online Retail Dataset (UCI Machine Learning Repository) <br>
+Online Retail Dataset (UCI Machine Learning Repository)
+
 **Period:** <br>
-December 2010 – December 2011 <br>
+December 2010 – December 2011
+
 **Records:** <br>
-541,909 transactions <br>
+541,909 transactions
+
 **Columns Used:** <br>
 Dataset ini memiliki delapan kolom utama, yaitu:
 -	InvoiceNo
@@ -70,18 +72,20 @@ Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk 
 -	Aggregate Functions
 -	CASE WHEN
 -	GROUP BY
+-	ORDER BY
 -	JOIN
 -	Date Functions
--	Views 
+-	View Creation
 -	Ranking Funcions
 -	Business KPI Calculation
 
 ## Business Skills Demonstrated
--	Sales Analytics
--	Product Analytics
+-	Sales Performance Analysis
+-	Product Performance Analysis
 -	Customer Analytics
--	Revenue Analysis
 -	KPI Development
+-	Revenue Growth Analysis
+-	Customer Retention Analysis
 -	Business Insight Generation
 -	Data Storytelling
 -	Dashboard Design
@@ -93,9 +97,9 @@ Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk 
 ### Customer Analytics Dashboard
 
 ## Key Findings
-- Perubahan Revenue terutama dipengaruhi oleh jumlah transaksi (transaction volume) dibandingkan dengan perubahan Average Order Value (AOV).
+- Perubahan Gross Revenue terutama dipengaruhi oleh jumlah transaksi (transaction volume) dibandingkan dengan perubahan Average Order Value (AOV).
 - Pertumbuhan Revenue didorong oleh beberapa produk dengan performa penjualan yang konsisten, bukan bergantung pada satu produk tertentu.
-- Akuisisi pelanggan dan jumlah pelanggan aktif memberikan pengaruh yang lebih besar terhadap perubahan Revenue dibanding retensi pelanggan.
+- Peningkatan jumlah New Customer dan Active Customer memberikan pengaruh yang lebih besar terhadap perubahan Revenue dibanding retensi pelanggan.
 - Repeat Purchase Rate dan Retention Rate relatif stabil pada sebagian besar periode analisis.
   
 ## Business Recommendation
@@ -109,22 +113,23 @@ Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk 
 Retail-Sales-Performance-Analysis
 │
 ├── Dataset
-│   └── Online Retail.xlsx
 │
 ├── SQL
-│   ├── Data Cleaning.sql
-│   ├── Sales Analytics.sql
-│   ├── Product Analytics.sql
-│   ├── Customer Analytics.sql
-│   └── SQL Views.sql
+│   ├── 01_Data_Cleaning.sql
+│   ├── 02_Sales_Analytics.sql
+│   ├── 03_Product_Analytics.sql
+│   ├── 04_Customer_Analytics.sql
+│   ├── 05_Create_Sales_View.sql
+│   ├── 06_Create_Product_View.sql
+│   └── 07_Create_Customer_View.sql
 │
 ├── Power BI
 │   └── Retail Sales Dashboard.pbix
 │
 ├── Images
-│   ├── Sales Dashboard.png
-│   ├── Product Dashboard.png
-│   └── Customer Dashboard.png
+│   ├── Sales_Dashboard.png
+│   ├── Product_Dashboard.png
+│   └── Customer_Dashboard.png
 │
 └── README.md
 ```
