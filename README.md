@@ -114,9 +114,9 @@ Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk 
 ```text
 retail-sales-performance-analysis
 │
-├── Dataset
+├── dataset
 │
-├── SQL
+├── sql
 │   ├── 01_Data_Cleaning.sql
 │   ├── 02_Sales_Analytics.sql
 │   ├── 03_Product_Analytics.sql
@@ -125,10 +125,10 @@ retail-sales-performance-analysis
 │   ├── 06_Create_Product_View.sql
 │   └── 07_Create_Customer_View.sql
 │
-├── Power BI
+├── power-bi
 │   └── Retail Sales Dashboard.pbix
 │
-├── Images
+├── images
 │   ├── Sales_Dashboard.png
 │   ├── Product_Dashboard.png
 │   └── Customer_Dashboard.png
