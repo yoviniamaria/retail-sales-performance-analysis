@@ -54,6 +54,7 @@ Beberapa permasalahan kualitas data yang diidentifikasi beserta tindakan yang di
 | InvoiceNo = 0 | Diselesaikan melalui perubahan tipe data dan Re-imported dataset |
 | Quantity Negatif | Diinvestigasi dan dipertahankan apabila merupakan transaksi yang valid |
 | CustomerID NULL | Tetap digunakan pada Sales Analytics, tetapi dikecualikan pada Customer Analytics |
+
 Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk menganalisis Sales Analytics, Product Analytics, dan Customer Analytics.
 
 ## Tools 
