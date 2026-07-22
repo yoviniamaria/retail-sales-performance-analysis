@@ -1,8 +1,7 @@
 # retail-sales-performance-analysis
 Sales, Product, and Customer Analytics using SQL and Power BI <br>
 
-Proyek ini bertujuan menganalisis performa penjualan ritel menggunakan **Online Retail Dataset** dari **UCI Machine Learning Repository**. Analisis dilakukan untuk mengidentifikasi faktor-faktor utama yang memengaruhi **Gross Revenue** berdasarkan tiga perspektif analisis, yaitu **Sales Analytics, Product Analytics**, dan **Customer Analytics**.
-
+Proyek ini menganalisis performa penjualan ritel menggunakan **Online Retail Dataset** dari **UCI Machine Learning Repository**. Analisis dilakukan untuk mengidentifikasi faktor-faktor utama yang memengaruhi **Gross Revenue** berdasarkan tiga perspektif analisis: **Sales Analytics, Product Analytics**, dan **Customer Analytics**.
 
 ## Project Overview 
 Proyek ini bertujuan untuk menganalisis performa penjualan ritel menggunakan **Online Retail Dataset** dari **UCI Machine Learning Repository**.<br>
@@ -16,7 +15,7 @@ Proyek ini menggunakan SQL untuk proses data cleaning dan analisis data, serta P
 ## Business Problem 
 Perusahaan ritel perlu memahami faktor-faktor yang memengaruhi perubahan performa penjualan agar dapat mengambil keputusan bisnis yang lebih efektif.
 
-Fluktuasi Gross Revenue setiap bulan dapat dipengaruhi oleh berbagai aspek, seperti jumlah transaksi, performa produk dan perilaku customer
+Fluktuasi Gross Revenue setiap bulan dapat dipengaruhi oleh berbagai aspek, seperti jumlah transaksi, performa produk, dan perilaku customer
 
 Proyek ini bertujuan mengidentifikasi faktor-faktor utama yang mendorong peningkatan maupun penurunan Gross Revenue melalui analisis performa penjualan, produk, dan customer.
 
@@ -30,7 +29,7 @@ Online Retail Dataset (UCI Machine Learning Repository)
 December 2010 – December 2011
 
 **Records:** <br>
-541,909 transactions
+541,909 rows
 
 **Columns Used:** <br>
 Dataset ini memiliki delapan kolom utama, yaitu:
@@ -53,7 +52,7 @@ Beberapa permasalahan kualitas data yang diidentifikasi beserta tindakan yang di
 | InvoiceNo bertipe INTEGER | Diubah menjadi tipe data **VARCHAR** |
 | Invoice Adjustment (Invoice A) | Dikecualikan dari analisis penjualan |
 | Invoice Cancellation (Invoice C) | Dikecualikan dari analisis Revenue |
-| InvoiceNo = 0 | Diselesaikan melalui perubahan tipe data dan Re-imported dataset |
+| InvoiceNo = 0 | Diselesaikan melalui perubahan tipe data dan *Re-imported* dataset |
 | Quantity Negatif | Diinvestigasi dan dipertahankan apabila merupakan transaksi yang valid |
 | CustomerID NULL | Tetap digunakan pada Sales Analytics, tetapi dikecualikan pada Customer Analytics |
 
@@ -76,7 +75,7 @@ Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk 
 -	JOIN
 -	Date Functions
 -	View Creation
--	Ranking Funcions
+-	Ranking Functions
 -	Business KPI Calculation
 
 ## Business Skills Demonstrated
@@ -99,11 +98,11 @@ Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk 
 ## Key Findings
 - Perubahan Gross Revenue terutama dipengaruhi oleh jumlah transaksi (transaction volume) dibandingkan dengan perubahan Average Order Value (AOV).
 - Pertumbuhan Revenue didorong oleh beberapa produk dengan performa penjualan yang konsisten, bukan bergantung pada satu produk tertentu.
-- Peningkatan jumlah New Customer dan Active Customer memberikan pengaruh yang lebih besar terhadap perubahan Revenue dibanding retensi pelanggan.
+- Peningkatan jumlah New Customer dan Active Customer memiliki hubungan yang lebih kuat terrhadap perubahan Revenue dibanding retensi pelanggan.
 - Repeat Purchase Rate dan Retention Rate relatif stabil pada sebagian besar periode analisis.
   
 ## Business Recommendation
--	Meningkatkan strategi akuisisi pelanggan dengan mengevaluasi marketing dan channel akuisisi customer.
+-	Meningkatkan strategi akuisisi pelanggan dengan mengevaluasi strategi pemasaran dan channel akuisisi customer.
 -	Meningkatkan aktivitas pelanggan melalui kampanye promosi, voucher, dan email marketing.
 -	Mempromosikan produk dengan kontribusi pendapatan yang masih rendah namun memiliki potensi penjualan yang kuat.
 -	Meningkatkan pembelian ulang pelanggan melalui program loyalitas, bundling produk, cross-selling, membership, dan program penghargaan.
@@ -141,6 +140,6 @@ Information Systems Graduate
 
 Google Data Analytics Professional Certificate 
 
-LinkedIn: www.linkedin.com/in/mariayovinia
+LinkedIn: [Maria Yovinia](www.linkedin.com/in/mariayovinia)
 
-GitHub: https://github.com/yoviniamaria
+GitHub: [yoviniamaria](https://github.com/yoviniamaria)
