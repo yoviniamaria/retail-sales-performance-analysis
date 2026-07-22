@@ -92,11 +92,13 @@ Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk 
 
 ## Dashboard Preview 
 ### Sales Analytics Dashboard
-![Sales Dashboard](images/Sales_Dashboard.png)
+![Sales Dashboard](images/Sales_Dashboard.PNG)
+
 ### Product Analytics Dashboard
-![Product Dashboard](images/Product_Dashboard.png)
+![Product Dashboard](images/Product_Dashboard.PNG)
+
 ### Customer Analytics Dashboard
-![Customer Dashboard](images/Customer_Dashboard.png)
+![Customer Dashboard](images/Customer_Dashboard.PNG)
 
 ## Key Findings
 - Perubahan Gross Revenue terutama dipengaruhi oleh jumlah transaksi (transaction volume) dibandingkan dengan perubahan Average Order Value (AOV).
