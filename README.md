@@ -31,7 +31,7 @@ December 2010 – December 2011 <br>
 **Records:** <br>
 541,909 transactions <br>
 **Columns Used:** <br>
-Eight key columns containing
+Dataset ini memiliki delapan kolom utama, yaitu:
 -	InvoiceNo
 -	StockCode
 -	Description
@@ -40,6 +40,21 @@ Eight key columns containing
 -	UnitPrice 
 -	CustomerID
 -	Country
+
+## Data Cleaning
+Sebelum proses analisis, validasi dan pembersihan data dilakukan untuk memastikan kualitas dan akurasi data.
+
+Beberapa permasalahan kualitas data yang diidentifikasi beserta tindakan yang dilakukan adalah sebagai berikut:
+| Permasalahan | Tindakan |
+|--------------|----------|
+| InvoiceDate bertipe TEXT | Diubah menjadi tipe data **Date** |
+| InvoiceNo bertipe INTEGER | Diubah menjadi tipe data **VARCHAR** |
+| Invoice Adjustment (Invoice A) | Dikecualikan dari analisis penjualan |
+| Invoice Cancellation (Invoice C) | Dikecualikan dari analisis Revenue |
+| InvoiceNo = 0 | Diselesaikan melalui perubahan tipe data dan Re-imported dataset |
+| Quantity Negatif | Diinvestigasi dan dipertahankan apabila merupakan transaksi yang valid |
+| CustomerID NULL | Tetap digunakan pada Sales Analytics, tetapi dikecualikan pada Customer Analytics |
+Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk menganalisis Sales Analytics, Product Analytics, dan Customer Analytics.
 
 ## Tools 
 -	SQL (MySQL)
@@ -70,17 +85,6 @@ Eight key columns containing
 -	Data Storytelling
 -	Dashboard Design
 -	Business Recommendation
-
-## Data Cleaning
-| Issue | Decision | Reason |
-|-------|----------|--------|
-| InvoiceDate | Coverted to **DATE** | Agar dapat dilakukan analisis berbasis waktu. |
-| InvoiceNo | Coverted to **VARCHAR** | Nilai invoice yang mengandung karakter (A dan C) tidak dapat disimpan sebagai INTEGER, sehingga berubah menjadi 0 saat proses impor data |
-| Invoice A | Excluded | Bukan merupakan transaksi penjualan |
-| Invoice C | Excluded | Merupakan transaksi pembatalan |
-| InvoiceNo = 0 | Re-imported dataset | Terjadi kesalahan tipe data saat proses impor data |
-| Quantity Negatif | Retained | Tidak seluruh transaksi dengan jumlah negatif merupakan transaksi retur |
-| CustomerID NULL | Retained (Sales Analytics) | Tetap valid untuk analisis penjualan, tetapi dikecualikan pada Customer Analytics. |
 
 ## Dashboard Preview 
 ### Sales Analytics Dashboard
