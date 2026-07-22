@@ -112,7 +112,7 @@ Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk 
 
 ## Repository Structure
 ```text
-Retail-Sales-Performance-Analysis
+retail-sales-performance-analysis
 │
 ├── Dataset
 │
