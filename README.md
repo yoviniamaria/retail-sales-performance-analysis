@@ -23,7 +23,7 @@ Hasil analisis diharapkan dapat memberikan insight yang bermanfaat serta rekomen
 
 ## Dataset 
 **Source:** <br>
-Online Retail Dataset (UCI Machine Learning Repository)
+[Online Retail Dataset - UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/352/online+retail)
 
 **Period:** <br>
 December 2010 – December 2011
@@ -41,6 +41,8 @@ Dataset ini memiliki delapan kolom utama, yaitu:
 -	UnitPrice 
 -	CustomerID
 -	Country
+
+Dataset asli tidak disertakan dalam repository ini karena batasan ukuran file.
 
 ## Data Cleaning
 Sebelum proses analisis, validasi dan pembersihan data dilakukan untuk memastikan kualitas dan akurasi data.
@@ -117,6 +119,7 @@ Setelah proses *data cleaning* selesai, dataset dinyatakan siap digunakan untuk 
 retail-sales-performance-analysis
 │
 ├── dataset
+│   └── README.md
 │
 ├── sql
 │   ├── 01_Data_Cleaning.sql
