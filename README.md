@@ -42,7 +42,8 @@ Dataset ini memiliki delapan kolom utama, yaitu:
 -	CustomerID
 -	Country
 
-Dataset asli tidak disertakan dalam repository ini karena batasan ukuran file.
+Dataset asli tidak disertakan dalam repository ini karena batasan ukuran file. <br>
+Silakan mengunduh dataset melalui tautan resmi UCI Machine Learning Repository di atas.
 
 ## Data Cleaning
 Sebelum proses analisis, validasi dan pembersihan data dilakukan untuk memastikan kualitas dan akurasi data.
